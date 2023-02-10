@@ -1,0 +1,23 @@
+create database Todo_list;
+
+use Todo_list;
+
+create table user (
+	id varchar(10) primary key,
+	user_name varchar(20) not null,
+	e_mail varchar(50) not null,
+	password varchar(20) not null,
+	constraint unique (e_mail)
+);
+
+create table todo (
+	id varchar(10) primary key,
+	description varchar(100),
+	user_id varchar(20) not null,
+	constraint foreign key (user_id) references user(id)
+);
+
+insert into user values('U001','kamal','Kamal@gmail.com','kamal');
+
+
+0772934595
