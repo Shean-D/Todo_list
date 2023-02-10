@@ -20,4 +20,3 @@ create table todo (
 insert into user values('U001','kamal','Kamal@gmail.com','kamal');
 
 
-0772934595
